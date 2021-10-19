@@ -100,7 +100,7 @@ class HashTableOpenHashing(HashTable):
         self.table[index].delete(key)
 
     def contains(self, key):
-        return self.get_index != -1
+        return self.get_index(key) != -1
 
     def get_index(self, key):
         for index, linked_list in enumerate(self.table):
